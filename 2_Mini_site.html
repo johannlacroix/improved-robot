@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johann_Lacroix_In_Low_Code_Mode</title>
+    <link rel="stylesheet" type="text/css" href="JLLCM.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FEEAF0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        h1 {
+            color: #B31B72;
+            text-align: center;
+        }
+
+        /* Style pour les onglets */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #FEB501;
+        }
+
+            .tabs li {
+                flex: 1;
+                text-align: center;
+                border-right: 1px solid gray;
+            }
+
+                .tabs li:last-child {
+                    border-right: none;
+                }
+
+            .tabs a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        /* Style pour les fenêtres modales */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+</head>
+
+<body>
+    <h1>Johann_Lacroix_In_Low_Code_Mode</h1>
+    <ul class="tabs">
+        <li><a href="front-end.html">Front-End</a></li>
+        <li><a href="back-end.html">Back-End</a></li>
+        <li><a href="api.html">API</a></li>
+        <li><a href="soft-skills.html">Soft Skills</a></li>
+        <li><a href="languages.html">Languages</a></li>
+    </ul>
+    <div class="container" style="margin: 0 auto; max-width: 1000px;">
+        <p class="center justify">Bonjour! Et bienvenue sur ce mini-site codé pour l'occasion de cette candidature Simplon-Onepoint et pour lequel j'ai appris quelques rudiments de HTML ces derniers jours. Je suis très heureux de vous présenter ici quelques informations classées par catégories. Cliquez sur les onglets ci-dessus pour en savoir plus. J'ai hâte de vous rencontrer, A très vite, Johann Lacroix</p>
+
+        <img src="58C91554-9F5E-41E8-A298-24245D25B2E4_1_105_c.jpeg" align="right" width="200px" style="vertical-align: middle;">
+
+        <!-- Fenêtres modales -->
+        <div id="front-end-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('front-end-modal')">&times;</span>
+                <h2>Front-End</h2>
+                <p>Contenu Front-End</p>
+            </div>
+        </div>
+        <!-- ... -->
+    </div>
+</body>
